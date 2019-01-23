@@ -5,19 +5,22 @@
 import * as React from 'react'
 
 import styles from './styles.css'
+import BreadCrumb from './components/BreadCrumb';
+import { IBreadcrumbItem } from 'office-ui-fabric-react/lib';
 
-export type Props = { text: string }
+export type Props = {
+  context: any;
+  elementbefore?: IBreadcrumbItem[];
+}
 
 export default class ExampleComponent extends React.Component<Props> {
   render() {
     const {
-      text
+      context
     } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
+      <BreadCrumb context={this.props.context}></BreadCrumb>
     )
   }
 }

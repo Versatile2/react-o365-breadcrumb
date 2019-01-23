@@ -1,0 +1,8 @@
+{
+  "short_name": "react-versatile2-breadcrumb",
+  "name": "react-versatile2-breadcrumb",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -3,15 +3,10 @@ import { IBreadCrumbProps } from './IBreadCrumbProps';
 import { IBreadcrumbItem, Breadcrumb } from 'office-ui-fabric-react/lib';
 import NavigationNodeUtils from '../utils/NavigationNodeUtils';
 import INavigationNode from '../utils/INavigationNode';
+import ISiteBreadcrumbState from './Interface/ISiteBreadcrumbState';
+import ISiteBreadcrumbProps from './Interface/ISiteBreadcrumbProps';
 
-export interface ISiteBreadcrumbProps {
-  context: any;
-  elementbefore?: IBreadcrumbItem[];
-}
 
-export interface ISiteBreadcrumbState {
-  breadcrumbItems: IBreadcrumbItem[];
-}
 
 export default class BreadCrumb extends React.Component<
   ISiteBreadcrumbProps,

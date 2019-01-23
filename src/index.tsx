@@ -20,7 +20,7 @@ export default class ExampleComponent extends React.Component<Props> {
     } = this.props
 
     return (
-      <BreadCrumb context={this.props.context}></BreadCrumb>
+      <BreadCrumb context={context}></BreadCrumb>
     )
   }
 }
